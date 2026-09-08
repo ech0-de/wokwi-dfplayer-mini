@@ -1,8 +1,8 @@
 [wokwi]
 version = 1
-elf = 'test/blink/build/arduino.avr.uno/blink.ino.elf'
-firmware = 'test/blink/build/arduino.avr.uno/blink.ino.hex'
+elf = 'test/dfplayer/build/arduino.avr.uno/dfplayer.ino.elf'
+firmware = 'test/dfplayer/build/arduino.avr.uno/dfplayer.ino.hex'
 
 [[chip]]
-name = 'inverter'
+name = 'dfplayer-mini'
 binary = 'dist/chip.wasm'

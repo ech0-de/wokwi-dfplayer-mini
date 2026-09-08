@@ -1,13 +1,42 @@
 {
   "version": 1,
-  "name": "Inverter",
-  "author": "Uri Shaked",
+  "name": "DFPlayer Mini",
+  "author": "Echo Meißner",
   "license": "MIT",
-  "docs": "https://github.com/wokwi/inverter-chip/blob/main/docs/README.md",
+  "docs": "https://github.com/ech0-de/wokwi-dfplayer-mini/blob/main/docs/README.md",
   "pins": [
-    "OUT",
-    "IN",
     "VCC",
-    "GND"
+    "RX",
+    "TX",
+    "DAC_R",
+    "DAC_L",
+    "SPK1",
+    "SPK2",
+    "GND",
+    "IO1",
+    "IO2",
+    "ADKEY1",
+    "ADKEY2",
+    "USB_DP",
+    "USB_DM",
+    "BUSY"
+  ],
+  "controls": [
+    {
+      "id": "trackCount",
+      "label": "TF Card Track Count",
+      "type": "range",
+      "min": 1,
+      "max": 999,
+      "step": 1
+    },
+    {
+      "id": "trackDurationMs",
+      "label": "Simulated Track Duration (ms)",
+      "type": "range",
+      "min": 200,
+      "max": 10000,
+      "step": 100
+    }
   ]
 }
